@@ -1,0 +1,11 @@
+{
+  {
+    "AzureKeyVaultUrl": "<keyvault url>",
+    "ApiUrl": "<api url>",
+    "AzureAd": {
+      "ClientId": "<app registration client id>",
+      "Scope": "<api scope>",
+      "TokenUrl": "<token url>" 
+    }
+  }
+}

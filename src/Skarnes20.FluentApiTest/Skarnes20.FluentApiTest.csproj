@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageTags>Skarnes20;Api testing</PackageTags>
+		<Description>Fluent test framework for easy api testing</Description>
+		<Copyright>Skarnes20</Copyright>
+		<Authors>Kjetil M. Kværne</Authors>
+		<Company>Private</Company>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Azure.Extensions.AspNetCore.Configuration.Secrets" Version="1.2.2" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+		<PackageReference Include="Azure.Identity" Version="1.6.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+	</ItemGroup>
+
+</Project>
