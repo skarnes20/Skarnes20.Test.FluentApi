@@ -12,6 +12,10 @@
 		<Copyright>Skarnes20</Copyright>
 		<Authors>Kjetil M. Kværne</Authors>
 		<Company>Private</Company>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<RepositoryType>git</RepositoryType>
+		<PackageId>NuGet.Workflow</PackageId>
+		<RepositoryUrl>https://github.com/skarnes20/FluentApiTest</RepositoryUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
