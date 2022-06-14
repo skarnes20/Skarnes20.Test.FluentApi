@@ -23,7 +23,4 @@ jobs:
       run: dotnet restore
       
     - name: Build
-      run: dotnet build --no-restore
-      
-    - name: Create Nuget Package
-      run: dotnet pack -c Release /p:Version=${{github.event.release.tag_name}}
+      run: dotnet build --no-restore      
