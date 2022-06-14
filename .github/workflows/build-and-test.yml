@@ -24,3 +24,6 @@ jobs:
       
     - name: Build
       run: dotnet build --no-restore      
+      
+    - name: Package nuget
+      run: dotnet pack --configuration release -o:package /p:PackageVersion=${{ steps.gitversion.outputs.AssemblySemVer }}      
