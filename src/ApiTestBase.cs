@@ -1,4 +1,4 @@
-﻿namespace Skarnes20.FluentApiTest;
+﻿namespace Skarnes20.Test.FluentApi;
 
 public class ApiTestBase<T> : Fluent<T> where T : Fluent<T>
 {
@@ -47,9 +47,9 @@ public class ApiTestBase<T> : Fluent<T> where T : Fluent<T>
 
     public void VerifyResponseCode(HttpStatusCode statusCode)
     {
-        if (ResponseMessage?.StatusCode != statusCode)
+        if (ResponseMessage.StatusCode != statusCode)
         {
-            throw new Exception($"Invalid response, expected {statusCode}, got {ResponseMessage?.StatusCode}");
+            throw new Exception($"Invalid response, expected {statusCode}, got {ResponseMessage.StatusCode}");
         }
     }
 }

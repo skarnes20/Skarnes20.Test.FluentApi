@@ -1,4 +1,4 @@
-﻿namespace Skarnes20.FluentApiTest.Auth;
+﻿namespace Skarnes20.Test.FluentApi.Auth;
 
 public class TokenDto
 {

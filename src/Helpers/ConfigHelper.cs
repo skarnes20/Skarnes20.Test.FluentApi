@@ -1,4 +1,4 @@
-﻿namespace Skarnes20.FluentApiTest.Helpers;
+﻿namespace Skarnes20.Test.FluentApi.Helpers;
 
 public static class ConfigHelper
 {
@@ -15,7 +15,7 @@ public static class ConfigHelper
 
             var config = new ConfigurationBuilder()
                 .AddConfiguration(jsonConfig)
-                .AddAzureKeyVault(new Uri(jsonConfig["AzureKeyVaultUrl"]),
+                .AddAzureKeyVault(new Uri(jsonConfig["AzureKeyVaultUrl"]??string.Empty),
                     new DefaultAzureCredential());
 
             _configuration = config.Build();

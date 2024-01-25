@@ -1,4 +1,4 @@
-﻿namespace Skarnes20.FluentApiTest.Helpers;
+﻿namespace Skarnes20.Test.FluentApi.Helpers;
 
 public static class HostHelper
 {
@@ -12,7 +12,7 @@ public static class HostHelper
                 services.AddHttpClient("Api",
                     client =>
                     {
-                        client.BaseAddress = new Uri(configuration.GetValue<string>("ApiUrl"));
+                        client.BaseAddress = new Uri(configuration.GetValue<string>("ApiUrl")??string.Empty);
                     });
                 services.AddHttpClient("Token");
             }).Build();
